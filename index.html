@@ -8,7 +8,14 @@
 <meta name="description" content="" />
 <link href='http://fonts.googleapis.com/css?family=Englebert|Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
 <script src="https://use.fontawesome.com/c38daf31bb.js"></script>
-<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- IONICON STYLE SHEET FOR BEAUTIFUL ICONS -->
+<link href="assets/css/ionicons.css" rel="stylesheet" />
+    <!-- STYLE FOR OPENING IMAGE IN POPUP USING FANCYBOX-->
+<link href="assets/js/source/jquery.fancybox.css" rel="stylesheet" />
+    <!-- CUSTOM CSS -->
+<link href="assets/css/style1.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -31,7 +38,7 @@
 					<a href="#services" class="navbar_links" id="services-page">Services</a>
 				</li>
 					<li class="navbar_item">
-					<a href="#port" class="navbar_links" id="port-page">Portfolio</a>
+					<a href="#works" class="navbar_links" id="port-page">Portfolio</a>
 				</li>
 					
 					<li class="navbar_btn">
@@ -39,17 +46,19 @@
 				</li>
 			</ul>
 		</div>
-
+		
 	</nav>
 
 
 	<div class="hero" id="home">
 		<div class="hero_container">
-			<h1 class="hero_heading">I am&nbsp;<span>Eliud</span></h1>
-			<p class="hero_description">I am a <span>web developer</span>
-			 
+			<h1 class="hero_heading">Fullstack&nbsp;<span>Developer</span></h1>
+			<p class="hero_description">I am passionate <span> about web development.
+				I like solving complex peoblems. I love reading beautiful minds perspective on challenge solving.
+			</span>
 			</p>
-			<button class="main_btn"><a href="#">Explore</a></button>
+			<button class="main_btn"><a href="#">Buy me coffee</a></button>
+			<button class="main_btn"><a href="#">Contact Me</a></button>
 		</div>
 	</div>
 
@@ -57,13 +66,13 @@
 	<div class="main" id="about">
 		<div class="main_container">
 			<div class="main_img_container">
-				<div class="main_img-card"><img src="images/eli.jpg" alt=""></div>
+				<div class="main_img-card"><img src="assets/images/eli.jpg" height="450px" width="450px" alt=""></div>
 			</div>
 
 			<div class="main_content">
 				<h1>what I do?</h1>
-				<h2>I create websites</h2>
-				<p>schedule a call to learn more about my services.
+				<h2>I Create Websites</h2>
+				<p>Schedule a call to learn more about my services.
 							I love web development. I have enjoyed creating super-fantastic sites for my clients.
 							I started coding at the age of 34 years.
 							I am currently available to work. I am also on the roadmap to becoming a fullstack developer.
@@ -73,142 +82,261 @@
 		</div>
 	</div>
 
-  <div class="services" id="services">
-			<h1>my services</h1>
-			<div class="services_wrapper">
-				<div class="services_card">
-				<h2>web development</h2>
-				<p>Front-end development</p>
-				<div class="services_btn"><button>Get started</button></div>
-				</div>
-
-				<div class="services_card">
-				<h2>web development</h2>
-				<p>Back-end development</p>
-				<div class="services_btn"><button>Get started</button></div>
-				</div>
-
-				<div class="services_card">
-				<h2>web DEsign</h2>
-				<p>create awesome designs</p>
-				<div class="services_btn"><button>Get started</button></div>
-				</div>
-
-				<div class="services_card">
-				<h2>Databases</h2>
-				<p>database design and development</p>
-				<div class="services_btn"><button>Get started</button></div>
-				</div>
-			</div>
-		</div>
-
-
-
-
-  <div class="port" id="port">
-			<h1>My 	Projects</h1>
-				<p style="color: aliceblue; font-size: 2rem;">Frontend</p>
-
-			<div class="port_wrapper">
-				<div class="port_card">
-				<h2>Tipperx</h2></a>
-				<p>Django website</p>
-				<div class="port_btn"><button><a href="http://elithecompguru.pythonanywhere.com/">View project</a></button></div>
-				</div>
-
-				<div class="port_card">
-				<h2>Eclipse Coders</h2>
-				<p>Nodejs website</p>
-				<div class="port_btn"><button>view project</button></div>
-				</div>
-
-				<div class="port_card">
-				<h2>TODO List</h2>
-				<p>Laravel todo list</p>
-				<div class="services_btn"><button>view project</button></div>
-				</div>
-
-				<div class="port_card">
-					<h2>SoccerRaid</h2>
-					<p>Nodejs football site</p>
-					<div class="port_btn"><button>view project</button></div>
-				</div>
-
-				<div class="port_card">
-					<h2>WeatherSock</h2>
-					<p>weather API app </p>
-					<div class="port_btn"><button>view project</button></div>
-				</div>
-
-				<div class="port_card">
-					<h2>ecommerce</h2>
-					<p>Vanilla js</p>
-					<div class="port_btn"><button>view project</button></div>
-				</div>
-			</div>
-		</div>
+   <section id="services">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>MY SERVICES</strong></h2>
+                    Here are some of the services I offer.
+                </div>
+            </div>
+            <div class="row text-center pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+                <div class="col-md-3">
+                    <img src="assets/images/database.png" alt="">
+                    <h4><strong>Database Design</strong></h4>
+                   
+                </div>
+                <div class="col-md-3">
+																	<img src="assets/images/web.png" width="250px" height="220px" alt="">
+																	
+                    <h4><strong>Backend development</strong></h4>
+                  
+                </div>
+                <div class="col-md-3">
+                   	<img src="assets/images/front.png" width="250px" height="220px" alt="">
+                    <h4><strong>Web Design</strong></h4>
+                
+                </div>
+                <div class="col-md-3">
+                    	<img src="assets/images/photoshop.jpg" width="250px" height="220px" alt="">
+                    <h4><strong>Photoshop</strong></h4>
+                   
+                </div>
+            </div>
+            <div class="row text-center" data-scroll-reveal="enter from the bottom after 0.6s">
+                <div class="col-md-3">
+                    	<img src="assets/images/photo.jpeg" width="250px" height="220px" alt="">
+                    <h4><strong>Photography</strong></h4>
+                    
+                </div>
+                <div class="col-md-3">
+                    	<img src="assets/images/video.jpg" width="250px" height="220px" alt="">
+                    <h4><strong>Video Editing</strong></h4>
+                    
+                </div>
+                <div class="col-md-3">
+                   	<img src="assets/images/tutor.webp" width="250px" height="220px" alt="">
+                    <h4><strong>Video Gaming</strong></h4>
+                    
+                </div>
+                <div class="col-md-3">
+                    	<img src="assets/images/hosting.jpg" width="250px" height="220px" alt="">
+                    <h4><strong>Web Hosting</strong></h4>
+                    
+                </div>
+            </div>
+        </div>
 
 
+    </section>
+
+
+<!--Skillls section-->
    <div class="skills" id="skills">
-			
-			<h1>my skills</h1>
+			<h1>My Skills</h1>
 			<div class="skills_wrapper">
 
 				<div class="skills_card">
-					<img src="images/Python.png" alt="">
+					<img src="assets/images/Python.png" alt="">
 				</div>
 
 				<div class="skills_card">
-		  <img src="images/js.png"alt="">
+		  <img src="assets/images/js.png"alt="">
 				</div>
 
 				<div class="skills_card">
-				<img src="images/html.png" alt="">
+				<img src="assets/images/html.png" alt="">
 					</div>
 
 				<div class="skills_card">					
-					<img src="images/css.jpeg" alt="">					
+					<img src="assets/images/css.jpeg" alt="">					
 				</div>
 
 				<div class="skills_card">					
-					<img src="images/jquery.jpg" alt="">					
+					<img src="assets/images/jquery.jpg" alt="">					
 				</div>
 
 				<div class="skills_card">	
-					<img src="images/mysql.png" alt="">					
+					<img src="assets/images/mysql.png" alt="">					
 				</div>
 
 				<div class="skills_card">		
-					<img src="images/django.png" alt="">					
+					<img src="assets/images/django.png" alt="">					
 				</div>
 
 				<div class="skills_card">					
-					<img src="images/node.png" alt="">
+					<img src="assets/images/node.png" alt="">
 				</div>
 
+				<div class="skills_card">					
+					<img src="assets/images/node.png" alt="">
+				</div>
 
+				<div class="skills_card">					
+					<img src="assets/images/node.png" alt="">
+				</div>
+
+				<div class="skills_card">					
+					<img src="assets/images/node.png" alt="">
+				</div>
+
+				<div class="skills_card">					
+					<img src="assets/images/node.png" alt="">
+				</div>
 			</div>
 		</div>
 
 
+<section id="works">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-md-offset-3 pad-bottom" data-scroll-reveal="enter from the bottom after 0.2s">
+                    <h2><strong>WORK PORFOLIO</strong></h2>
+                    Here are some of the projects I have worked on.
+
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-12 pad-bottom" data-scroll-reveal="enter from the bottom after 0.4s">
+                    <div class="caegories">
+                        <a href="#" data-filter="*" class="active btn btn-info btn-sm">All</a>
+                        <a href="#" data-filter=".html" class="btn btn-info btn-sm">HTML</a>
+                        <a href="#" data-filter=".css" class="btn btn-info btn-sm">CSS</a>
+                        <a href="#" data-filter=".code" class="btn btn-info btn-sm">SCRIPT</a>
+																								<a href="#" data-filter=".code" class="btn btn-info btn-sm">PYTHON</a>
+																								<a href="#" data-filter=".code" class="btn btn-info btn-sm">DJANGO</a>
+                        <a href="#" data-filter=".script" class="btn btn-info btn-sm">NODEJS</a>
+                    </div>
+
+                </div>
+            </div>
 
 
+            <div class="row text-center" id="portfolio-div" >
 
-		
+                <div class="col-md-4 col-sm-4 html">
+                    <div class="work-wrapper">
 
-	<div class="main" id="contact">
-		<div class="main_container">
-			<div class="main_content">
-				<h1>catch up with me?</h1>
-				<h2>get in contact with me</h2>
-				<p>lets talk about web development</p>
-				<button class="main_btn"><a href="#">contact me</a></button>
-			</div>
-			<div class="main_img-container">
-				<div class="main_img-card" id="card-2"><i class="fas fa-users"></i></div>
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/1.jpg">
+
+                            <img src="assets/img/portfolio/1.jpg" class="img-responsive " alt="" />
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 css">
+                    <div class="work-wrapper">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/2.jpg">
+
+                            <img src="assets/img/portfolio/2.jpg" class="img-responsive " alt="" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 code">
+                    <div class="work-wrapper">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/3.jpg">
+
+                            <img src="assets/img/portfolio/3.jpg" class="img-responsive " alt="" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 script">
+                    <div class="work-wrapper">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/4.jpg">
+
+                            <img src="assets/img/portfolio/4.jpg" class="img-responsive " alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 html script">
+                    <div class="work-wrapper">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/5.jpg">
+
+                            <img src="assets/img/portfolio/5.jpg" class="img-responsive " alt="" />
+                        </a>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 css code">
+                    <div class="work-wrapper">
+                        <a class="fancybox-media" title="Image Title Goes Here" href="assets/img/portfolio/6.jpg">
+
+                            <img src="assets/img/portfolio/6.jpg" class="img-responsive" alt="" />
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<div class="port" id="port">
+			<h1>My Blog Posts</h1>
+				<p style="color: aliceblue; font-size: 2rem; text-decoration: none;"> <a href="http://elithecompguru.pythonanywhere.com/blog/blog/">Go to Blog</a></p>
+
+			<div class="port_wrapper">
+				<div class="port_card">
+				<h2>Application Programing Interface</h2></a>
+				<img class="port_img" src="assets/images/api.png" alt="">
+				<p> What is Application Programming Interface?
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+				</p>
+				<div class="port_btn"><button><a href="#">Read More</a></button></div>
+				</div>
+
+					<div class="port_card">
+				<h2>Application Programing Interface</h2></a>
+				<img class="port_img" src="assets/images/api.png" alt="">
+				<p> What is Application Programming Interface?
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+				</p>
+				<div class="port_btn"><button><a href="#">Read More</a></button></div>
+				</div>
+
+					<div class="port_card">
+				<h2>Application Programing Interface</h2></a>
+				<img class="port_img" src="assets/images/api.png" alt="">
+				<p> What is Application Programming Interface?
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+				</p>
+				<div class="port_btn"><button><a href="#">Read More</a></button></div>
+				</div>
+
+					<div class="port_card">
+				<h2>Application Programing Interface</h2></a>
+				<img class="port_img" src="assets/images/api.png" alt="">
+				<p> What is Application Programming Interface?
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+
+							API is the acronym for Application Programming Interface, which is a software intermediary that allows two applications to talk to each other. Each time you use an app like Facebook, send an instant message, or check the weather on your phone, you're using an API.
+				</p>
+				<div class="port_btn"><button><a href="#">Read More</a></button></div>
+				</div>
 			</div>
 		</div>
-	</div>
+    </section>
+
+
 
 	<div class="footer_container">
 		<div class="footer_links">
@@ -270,5 +398,18 @@
 		</div>
 
 	<script src="default.js"></script>
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!-- BOOTSTRAP SCRIPTS  -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- SCROLLING SCRIPTS PLUGIN  -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <!--  FANCYBOX PLUGIN -->
+    <script src="assets/js/source/jquery.fancybox.js"></script>
+    <!-- ISOTOPE SCRIPTS -->
+    <script src="assets/js/jquery.isotope.js"></script>
+     <!-- SCROLL ANIMATIONS  -->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!-- CUSTOM SCRIPTS   -->
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
